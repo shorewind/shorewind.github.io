@@ -2,9 +2,27 @@
 <html>
     <meta property="og:image" content="https://cdn.discordapp.com/emojis/798308057372295208.webp?size=96&quality=lossless">
     <body>
-        <h1>Hello, World!</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
-        <img src="https://cdn.discordapp.com/attachments/957121823437357118/981403489244708904/unknown.png">
+        <h1 id="hello">Hello, World!</h1>
+
+        <p id="intro">I'm hosted with GitHub Pages.</p>
+
+        <button id="button" onclick="show()">click me ;)</button>
+
+        <img id="image" src="">
+
+        <script>
+           function show(){
+               image = document.getElementById("image");
+               image.src = "https://cdn.discordapp.com/attachments/957121823437357118/981403489244708904/unknown.png"
+
+               document.getElementById("button").style.display = "none";
+               document.getElementById("hello").style.display = "none";
+               document.getElementById("intro").style.display = "none";
+
+               var sound = new Audio("test-sound.mp3");
+               sound.play();
+           } 
+        </script>
+
     </body>
 </html>
