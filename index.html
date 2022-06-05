@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <title>shorewind's website</title>
-    <meta name="description" content="just a silly little webpage">
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/957121823437357118/981749239195521054/shore_oh.jpg" type="image/x-icon">
-
-    <meta property="og:title" content="shorewind's website"/>
-    <meta property="og:description" content="just a silly little webpage"/>
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/957121823437357118/981749239195521054/shore_oh.jpg"/>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="just a silly little webpage"/>
+        <meta property="og:title" content="shorewind's website"/>
+        <meta property="og:description" content="just a silly little webpage">
+        <meta property="og:image" content="assets/shore-oh/jpg">
+    
+        <title>shorewind's website</title>
+        <link rel="icon" href="assets/circular-blob-icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-        <h1 id="hello">Hello, World!</h1>
-
-        <p id="intro">I'm hosted with GitHub Pages.</p>
-
-        <button id="button" onclick="show()">click me ;)</button>
-
-        <img id="image" src="">
-
-        <script>
-           function show(){
-               image = document.getElementById("image");
-               image.src = "https://cdn.discordapp.com/attachments/957121823437357118/981756181515206666/image.png"
-
-               document.getElementById("button").style.display = "none";
-               document.getElementById("hello").style.display = "none";
-               document.getElementById("intro").style.display = "none";
-
-               var sound = new Audio("test-sound.mp3");
-               sound.play();
-           } 
-        </script>
-
+        <script type="text/javascript" src="script.js"></script>
+        <main id="main">
+            <h1 id="hello">Hello, World!</h1>
+            <p id="intro">I'm hosted with GitHub Pages.</p>
+            <button id="button" class="btn" onclick="show()">click me ;)</button>
+            <img id="image" src="" alt="">
+        </main>
+        <footer id="footer">
+            <a href="https://github.com/shorewind" target="_blank" rel="noopener noreferrer">
+                <img id="logo" src="assets/github-logo.png" alt="">
+            </a>
+            <p>
+                <i>Last updated <script>date()</script></i>
+            </p>
+        </footer>
     </body>
 </html>
