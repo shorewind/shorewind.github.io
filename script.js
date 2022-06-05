@@ -18,3 +18,7 @@ function date(){
     const options = {month: "long", day: "numeric", year: "numeric"}
     document.write(new Date().toLocaleDateString(undefined, options));
 }
+
+function imageClick(url){
+    window.open(url);
+}
